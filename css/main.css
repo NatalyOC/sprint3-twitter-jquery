@@ -96,6 +96,8 @@ hr{
     margin-bottom: 15px;
     padding: 4px;
     width: 450px;
+    overflow: hidden;
+    min-height: 10px;
 }
 /* Estilos para el boton */
 #tweet-button{
