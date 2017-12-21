@@ -11,15 +11,14 @@ $(document).ready(function() {
     // $(this).height($(this).prop('scrollHeight'));
     // Mientras que el alto sea menor
     while ($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
-      $(this).height($(this).height() + 1);}; 
-  
-
-});
+      $(this).height($(this).height() + 1);
+    }; 
+  });
   
   $('#tweet-button').click(function() {
-    var textTwitter = $('#tweet-box').text();
-    $('<div><p></p></div>').text(textTwitter);
-  }); 
-
+    var textTweet=$('#tweet-box').val();
+    var $div = $('<div>');
+    $( "#container" ).append($('<div>'+textTweet+'</div>').addClass('show-tweets'));
   
+  });
 });
